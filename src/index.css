@@ -1,0 +1,84 @@
+/* src/index.css */
+
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f172a; /* dark navy background */
+  color: #f1f5f9; /* light text */
+  line-height: 1.6;
+}
+
+/* Podium styling */
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.podium-place {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.podium-1 {
+  background: linear-gradient(180deg, #facc15, #ca8a04);
+  height: 220px;
+  color: #1e293b;
+}
+
+.podium-2 {
+  background: linear-gradient(180deg, #e5e7eb, #9ca3af);
+  height: 180px;
+  color: #1e293b;
+}
+
+.podium-3 {
+  background: linear-gradient(180deg, #f97316, #c2410c);
+  height: 150px;
+  color: #fff;
+}
+
+/* Standings table */
+.standings {
+  margin: 2rem auto;
+  max-width: 900px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.standings th,
+.standings td {
+  border: 1px solid #334155;
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.standings th {
+  background: #1e293b;
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.standings tr:nth-child(even) {
+  background: #1e293b;
+}
+
+.standings tr:hover {
+  background: #334155;
+}
